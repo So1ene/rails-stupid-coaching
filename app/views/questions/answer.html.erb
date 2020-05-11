@@ -1,0 +1,9 @@
+<h1>Talk to your coach!</h1>
+<form action="/answer" method="get">
+  <input type="text" name="question" placeholder="Say something...">
+  <input type="submit" value="Ask!">
+</form>
+
+<div><h2>You said:</h2><span>"<%= params[:question] %>"</span></div>
+
+<div><h2>Your coach says:</h2><span>"<%= @answer %>"</span></div>
